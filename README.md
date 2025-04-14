@@ -1,8 +1,40 @@
+## 🎤 AI Voice Recorder App with Web Integration
 ## 🎤 Voice-to-Text Summariser App
 
 A small personal project built with React Native and TypeScript.
-
-This app allows users to record their voice, convert the audio into text using speech recognition, and generate a short summary of the transcribed content. It started as an experiment in turning a simple web app into a mobile application and has been a useful way for me to explore React Native and frontend development.
-
+A project that delivers an AI-powered voice recorder as a mobile application by integrating a web service.
 The app is still a work in progress, and I plan to continue improving its functionality and UI.
+
+### Core Features (Web service - Next.js)
+- Voice recording and transcription  
+- Summerisation from transcription
+
+### ✨ New Features Introduced
+
+- **Camera Capture During Recording**: Users can take photos while recording audio  
+- **Script History Saving**: Stores transcription history for later reference  
+
+---
+
+### 🔧 Technical Overview
+
+#### 0. Web Component (Next.js)  
+[Git Repository](https://github.com/sunikko/ai-recording-web)  
+- Voice recording feature  
+- Audio-to-script conversion  
+- Summarisation using OpenAI API  
+
+#### 1. App Integration via WebView  
+- Loads the web component inside the app using a WebView  
+- Ensures consistent UI/UX across platforms  
+
+#### 2. Native Recording Functionality  
+- Uses the app's native recording API (rather than web recording) for better device compatibility  
+
+#### 3. Additional Feature: Camera Support  
+- Integrated native camera API to allow photo capture during recordings  
+
+#### 4. Additional Feature: History Storage  
+- Saves data locally on the device  
+- Displays a list of past recordings and transcriptions  
 
